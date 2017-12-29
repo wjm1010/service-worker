@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../images/logo.jpeg);
+    background-color: #f2f2f2;
+    background-repeat: no-repeat;
+    background-size: 20%;
+    background-position-x: 50%;
+    background-position-y: 100px;
+}
+
