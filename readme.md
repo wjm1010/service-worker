@@ -10,10 +10,10 @@
 
  service workers大量使用了promise，因为通常会等到响应后继续，根据相应返回一个成功或者失败的操作。
  
-##### 生命周期
+#### 生命周期
 ![Image text](http://jbcdn2.b0.upaiyun.com/2016/01/55b0169cdfe92b08203757ebc4e5ece2.png)
 
-#####  Service workers可以做哪些事情
+####  Service workers可以做哪些事情
 1. 后台数据同步
 2. 响应来自其他源的资源请求
 3. 集中接收计算成本高的数据更新，比如地理位置和陀螺仪信息，这样多个页面就可以利用同一组数据
@@ -29,17 +29,17 @@
 * 对时间或日期作出响应
 * 进入地理栅栏
 
-##### 一个service worker要经历以下过程：
+#### 一个service worker要经历以下过程：
 1. 安装
 2. 激活，激活成功之后，打开chrome://inspect/#service-workers可以查看到当前运行的service worker
 3. 监听fetch和message事件，下面两种事件会进行简要描述
 4. 销毁，是否销毁由浏览器决定，如果一个service worker长期不使用或者机器内存有限，则可能会销毁这个worker
 
-##### 调试
+#### 调试
 ![Image text](http://img.blog.csdn.net/20160610232003208)
 1. 这里的 scope，是指可以拦截请求的域,使用New Work -> offline 模拟断网，刷新页面： 
 2. 同一个网址，返回了相同页面。说明Service Worker成功拦截了原始的请求（如果不拦截，会出现页面无法访问的提示）
 
 
 
-###	联想知识：阻塞、promise、localStorage、http和https的区别
+####	联想知识：阻塞、promise、localStorage、http和https的区别
